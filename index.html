@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurum Titan - MetaTrader 5 tools for XAUUSD</title>
+<style>
+ :root{--bg:#0f1115;--card:#171a21;--gold:#d4a72c;--text:#e8e8e8;--muted:#9aa0aa}
+ *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+ header,section,footer{max-width:1040px;margin:0 auto;padding:48px 20px}
+ h1{font-size:2.2rem;margin:0 0 12px}h1 span{color:var(--gold)}h2{margin-top:0}
+ .lead{color:var(--muted);max-width:680px}
+ .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+ .card{background:var(--card);border:1px solid #262a33;border-radius:12px;padding:24px;display:flex;flex-direction:column}
+ .card ul{padding-left:18px;color:var(--muted);flex:1}
+ .price{font-size:1.8rem;font-weight:700;color:var(--gold)}.price small{font-size:.9rem;color:var(--muted);font-weight:400}
+ .btn{display:block;text-align:center;background:var(--gold);color:#111;font-weight:700;padding:12px;border-radius:8px;text-decoration:none;margin-top:12px}
+ .btn.alt{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+ .tag{display:inline-block;font-size:.75rem;border:1px solid #3a3f4b;border-radius:99px;padding:2px 10px;color:var(--muted);margin-bottom:8px}
+ ol{color:var(--muted)}.risk{background:#1d1414;border:1px solid #5a2a2a;border-radius:12px;padding:20px;color:#d9b8b8;font-size:.92rem}
+ footer{color:var(--muted);font-size:.85rem;border-top:1px solid #262a33}
+
+ .usdt{margin-top:14px;padding:12px;border:1px dashed #3a3f4b;border-radius:8px;font-size:.88rem;color:var(--muted)}
+ .usdt-h{color:var(--text);font-weight:700;margin-bottom:4px}
+ .addr{display:flex;gap:6px;align-items:center;margin:8px 0}
+ .addr code{flex:1;word-break:break-all;background:#0b0d11;padding:6px;border-radius:6px;color:var(--text);font-size:.8rem}
+ .copy{background:var(--gold);border:0;border-radius:6px;padding:6px 10px;font-weight:700;cursor:pointer}
+ .usdt-warn{color:#ff9b9b;font-weight:600}
+ .warnbox{background:#2a1212;border:2px solid #c0392b;border-radius:12px;padding:18px;color:#ffd6d6;margin-bottom:20px}
+ .launch{font-size:.85rem;color:var(--text);background:#2a2210;border:1px solid var(--gold);border-radius:8px;padding:8px;margin:6px 0}
+ .sold{display:block;color:var(--gold);font-weight:700;margin-top:4px}
+</style>
+</head>
+<body>
+<header>
+ <h1>Aurum <span>Titan</span></h1>
+ <p class="lead">Rule-based MetaTrader 5 tools for XAUUSD traders, built around risk controls for prop-firm style accounts. Pay with USDT or other crypto. Your license is issued for your MT5 account number.</p>
+</header>
+
+<section>
+ <div class="warnbox">
+  <strong>Important for direct USDT payments:</strong> send <strong>only USDT on the TRON (TRC-20) network</strong> to the address shown. Sending any other coin, or USDT on any other network (ERC-20, BEP-20 and so on), will result in permanent loss of funds that cannot be recovered or refunded. Send the exact amount shown for the product.
+  <br><br>After paying, email <a href="mailto:cryptopayment87@gmail.com" style="color:var(--gold)">cryptopayment87@gmail.com</a> with: (1) the transaction ID (TXID), (2) your MT5 account number, and (3) the product name. Your account-locked file is sent once the payment is confirmed on the TRON blockchain.
+ </div>
+</section>
+
+<section>
+ <h2>Products</h2>
+ <div class="grid">
+  <div class="card">
+   <span class="tag">Expert Advisor</span><h3>Aurum Titan Prop</h3>
+   <ul>
+    <li>Closed-bar trend and pullback entries with broker-side SL and TP</li>
+    <li>Risk-% sizing, partial exits at 1R, 2R and 3R, break-even</li>
+    <li>Daily and total loss locks set below the firm's limits</li>
+    <li>On-chart firm and phase selector with presets</li>
+    <li>News, session and spread filters, weekend close</li>
+   </ul>
+   <div class="price">149 USDT <small>lifetime, 2 accounts</small></div>
+   <div class="launch">Launch price: rises to $199 after the first 10 lifetime copies, counting MQL5 Market and direct sales combined. <span class="sold">Lifetime copies sold so far: 0 of 10</span></div>
+   <a class="btn" href="#" data-checkout="PLACEHOLDER_NOWPAYMENTS_ATP_LIFETIME">Buy with crypto</a>
+   <div class="usdt">
+    <div class="usdt-h">Or pay directly with USDT (TRC-20)</div>
+    <div>Send exactly <strong>149 USDT</strong> for <em>Aurum Titan Prop, lifetime</em></div>
+    <div class="addr"><code>TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ</code><button type="button" class="copy" data-addr="TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ">Copy</button></div>
+    <div class="usdt-warn">Send only USDT on the TRON (TRC-20) network. Other coins or networks will be lost.</div>
+   </div>
+   <a class="btn alt" href="#" data-checkout="PLACEHOLDER_NOWPAYMENTS_ATP_1M">Rent 1 month - 30 USDT</a>
+   <div class="usdt">
+    <div class="usdt-h">Or pay directly with USDT (TRC-20)</div>
+    <div>Send exactly <strong>30 USDT</strong> for <em>Aurum Titan Prop, 1-month rental</em></div>
+    <div class="addr"><code>TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ</code><button type="button" class="copy" data-addr="TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ">Copy</button></div>
+    <div class="usdt-warn">Send only USDT on the TRON (TRC-20) network. Other coins or networks will be lost.</div>
+   </div>
+  </div>
+  <div class="card">
+   <span class="tag">Expert Advisor, multi-asset</span><h3>Titan PairFlow Pro</h3>
+   <ul>
+    <li>Pair trading on the z-score of a hedge-ratio spread</li>
+    <li>Up to 20 pairs: forex, metals, indices, crypto, CFDs</li>
+    <li>Auto Pilot or Manual mode from the dashboard</li>
+    <li>Beta-neutral, risk-based sizing for both legs</li>
+    <li>Daily and total loss guard; no broker-side SL, EA-managed exits</li>
+   </ul>
+   <div class="price">115 USDT <small>lifetime, 2 accounts</small></div>
+   <a class="btn" href="#" data-checkout="PLACEHOLDER_NOWPAYMENTS_TPF_LIFETIME">Buy with crypto</a>
+   <div class="usdt">
+    <div class="usdt-h">Or pay directly with USDT (TRC-20)</div>
+    <div>Send exactly <strong>115 USDT</strong> for <em>Titan PairFlow Pro, lifetime</em></div>
+    <div class="addr"><code>TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ</code><button type="button" class="copy" data-addr="TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ">Copy</button></div>
+    <div class="usdt-warn">Send only USDT on the TRON (TRC-20) network. Other coins or networks will be lost.</div>
+   </div>
+   <a class="btn alt" href="#" data-checkout="PLACEHOLDER_NOWPAYMENTS_TPF_1M">Rent 1 month - 30 USDT</a>
+   <div class="usdt">
+    <div class="usdt-h">Or pay directly with USDT (TRC-20)</div>
+    <div>Send exactly <strong>30 USDT</strong> for <em>Titan PairFlow Pro, 1-month rental</em></div>
+    <div class="addr"><code>TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ</code><button type="button" class="copy" data-addr="TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ">Copy</button></div>
+    <div class="usdt-warn">Send only USDT on the TRON (TRC-20) network. Other coins or networks will be lost.</div>
+   </div>
+   <a class="btn alt" href="#free-trial">Try the free demo trial first</a>
+  </div>
+  <div class="card">
+   <span class="tag">Indicator</span><h3>Aurum Titan Direction</h3>
+   <ul>
+    <li>Direction score from -100 to +100 with component breakdown</li>
+    <li>Non-repainting arrows on closed bars</li>
+    <li>Suggested SL, three targets and lot size</li>
+    <li>Alerts on new signals and direction changes</li>
+   </ul>
+   <div class="price">45 USDT <small>lifetime</small></div>
+   <a class="btn" href="#" data-checkout="PLACEHOLDER_NOWPAYMENTS_ATD_LIFETIME">Buy with crypto</a>
+   <div class="usdt">
+    <div class="usdt-h">Or pay directly with USDT (TRC-20)</div>
+    <div>Send exactly <strong>45 USDT</strong> for <em>Aurum Titan Direction, lifetime</em></div>
+    <div class="addr"><code>TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ</code><button type="button" class="copy" data-addr="TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ">Copy</button></div>
+    <div class="usdt-warn">Send only USDT on the TRON (TRC-20) network. Other coins or networks will be lost.</div>
+   </div>
+  </div>
+  <div class="card">
+   <span class="tag">Expert Advisor, hedging accounts</span><h3>Gold Grid Escape</h3>
+   <ul>
+    <li>Dual buy/sell averaging baskets with editable lot sequence</li>
+    <li>Several basket exit rules plus an escape plan</li>
+    <li>Global floating-loss stop with pause and resume</li>
+    <li>High-risk method; not allowed at most prop firms</li>
+   </ul>
+   <div class="price">89 USDT <small>lifetime</small></div>
+   <a class="btn" href="#" data-checkout="PLACEHOLDER_NOWPAYMENTS_GGE_LIFETIME">Buy with crypto</a>
+   <div class="usdt">
+    <div class="usdt-h">Or pay directly with USDT (TRC-20)</div>
+    <div>Send exactly <strong>89 USDT</strong> for <em>Gold Grid Escape, lifetime</em></div>
+    <div class="addr"><code>TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ</code><button type="button" class="copy" data-addr="TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ">Copy</button></div>
+    <div class="usdt-warn">Send only USDT on the TRON (TRC-20) network. Other coins or networks will be lost.</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="free-trial">
+ <h2>Free trial: Titan PairFlow</h2>
+ <p class="lead">Try the pair-trading engine before you buy. The trial runs on <strong>demo accounts only</strong> with 1 pair and 0.01 lot per leg, for 30 days from its build date. It needs no payment and no account number.</p>
+ <a class="btn" style="max-width:340px" href="downloads/TitanPairFlow_Free_v1.00.zip" download>Download free trial (.zip)</a>
+ <p class="lead" style="font-size:.9rem">Install: copy <code>TitanPairFlow_Free.ex5</code> to <code>MQL5\Experts</code> and <code>TitanPairFlowZ.ex5</code> to <code>MQL5\Indicators</code>. Full steps are in the README inside the zip. No results are claimed. Test the EA on demo before using the Pro version on a live account.</p>
+</section>
+
+<section>
+ <h2>How purchase and delivery work</h2>
+ <ol>
+  <li>Pay with the crypto checkout. USDT on TRON, BSC or Ethereum is supported.</li>
+  <li>Send your order ID (NOWPayments) or transaction ID (direct USDT), your MT5 account number and the product name to the support email.</li>
+  <li>You receive a compiled .ex5 licensed to your account, together with the user guide and preset files.</li>
+  <li>Test it in the Strategy Tester and on a demo account before using it on a live or evaluation account.</li>
+ </ol>
+ <p class="lead">Prefer MetaTrader's built-in store? The products will also be listed on the MQL5 Market.</p>
+</section>
+
+<section>
+ <div class="risk">
+  <strong>Risk disclaimer.</strong> Trading foreign exchange, metals and CFDs on margin carries a high level of risk and may not be suitable for all investors. You can lose some or all of your capital. These products are software tools only. They do not provide investment advice and do not guarantee any profit, any particular result, or passing a prop-firm evaluation. No performance figures are published for these products. Any backtest or simulated result you run yourself is hypothetical and not indicative of future results. Prop-firm presets are based on publicly available rules that may change; verify your own account's rules. Use only funds you can afford to lose. Digital products are delivered immediately and are non-refundable except where the law requires otherwise.
+ </div>
+</section>
+
+<footer>
+ &copy; 2026 Cryptopayment. MetaTrader is a trademark of MetaQuotes Ltd; this site is not affiliated with MetaQuotes. Contact: <a href="mailto:cryptopayment87@gmail.com" style="color:var(--gold)">cryptopayment87@gmail.com</a>
+</footer>
+<script>
+document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+ var a=b.getAttribute('data-addr');
+ var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)};
+ if(navigator.clipboard){navigator.clipboard.writeText(a).then(done,function(){prompt('Copy this address:',a)})}else{prompt('Copy this address:',a)}
+})});
+</script>
+</body>
+</html>
