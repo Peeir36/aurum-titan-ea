@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ: MT5 EA Licensing, USDT Payment, Delivery and Refunds</title>
+<meta name="description" content="Answers about Aurum Titan MT5 tools: MetaTrader 5 requirements, brokers and prop firms, account-locked licences, USDT TRC-20 payment, delivery, refunds and risk.">
+<link rel="canonical" href="https://peeir36.github.io/aurum-titan-ea/faq/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Kirk Manahan (Cryptopayment)">
+<!-- SEARCH ENGINE VERIFICATION: paste the tags you get from the consoles here (home page is enough). -->
+<!-- Google Search Console: <meta name="google-site-verification" content="PASTE_GOOGLE_TOKEN_HERE"> -->
+<!-- Bing Webmaster Tools:  <meta name="msvalidate.01" content="PASTE_BING_TOKEN_HERE"> -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aurum Titan">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="FAQ: MT5 EA Licensing, USDT Payment, Delivery and Refunds">
+<meta property="og:description" content="Answers about Aurum Titan MT5 tools: MetaTrader 5 requirements, brokers and prop firms, account-locked licences, USDT TRC-20 payment, delivery, refunds and risk.">
+<meta property="og:url" content="https://peeir36.github.io/aurum-titan-ea/faq/">
+<meta property="og:image" content="https://peeir36.github.io/aurum-titan-ea/assets/img/aurumtitanprop-promo.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:alt" content="Aurum Titan Prop: MetaTrader 5 Expert Advisor for XAUUSD">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FAQ: MT5 EA Licensing, USDT Payment, Delivery and Refunds">
+<meta name="twitter:description" content="Answers about Aurum Titan MT5 tools: MetaTrader 5 requirements, brokers and prop firms, account-locked licences, USDT TRC-20 payment, delivery, refunds and risk.">
+<meta name="twitter:image" content="https://peeir36.github.io/aurum-titan-ea/assets/img/aurumtitanprop-promo.png">
+<meta name="twitter:image:alt" content="Aurum Titan Prop: MetaTrader 5 Expert Advisor for XAUUSD">
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://peeir36.github.io/aurum-titan-ea/#kirk-manahan",
+   "name": "Kirk Manahan",
+   "alternateName": "Cryptopayment",
+   "jobTitle": "MetaTrader 5 software developer",
+   "email": "mailto:cryptopayment87@gmail.com",
+   "url": "https://peeir36.github.io/aurum-titan-ea/",
+   "sameAs": [
+    "https://www.mql5.com/en/users/cryptopayment",
+    "https://t.me/titanealabs"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://peeir36.github.io/aurum-titan-ea/#website",
+   "url": "https://peeir36.github.io/aurum-titan-ea/",
+   "name": "Aurum Titan",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://peeir36.github.io/aurum-titan-ea/#kirk-manahan"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://peeir36.github.io/aurum-titan-ea/faq/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Which MetaTrader version do the products need?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The MetaTrader 5 desktop terminal for Windows. The files are compiled .ex5 programs for MT5; they do not run on MetaTrader 4, and the MT5 mobile apps (iOS and Android) cannot run Expert Advisors or custom indicators. Keep your terminal updated to a current build (Titan PairFlow Pro needs build 4000 or later)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which brokers and prop firms can I use?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Any broker or prop firm that gives you a MetaTrader 5 account and allows Expert Advisors. Symbol suffixes such as XAUUSD.r are handled. Aurum Titan Prop includes rule presets for FTMO, FundedNext, The5ers, FundingPips, AquaFunded, Alpha Capital, E8 Markets, Blue Guardian, FXIFY and Maven, plus generic and custom settings. These presets are based on publicly available rules that may change, and the products are not affiliated with or endorsed by any firm. Before you start, check your firm's current terms yourself: whether third-party or purchased EAs are allowed, news-trading windows, hedging, grid or martingale bans, minimum hold times, weekend holding, consistency rules and the exact loss formulas. Some firms also restrict strategies that many traders run identically."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does licensing and the account lock work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Direct USDT purchases get a compiled .ex5 licensed to your MT5 account number. The lifetime licences for Aurum Titan Prop and Titan PairFlow Pro cover 2 accounts; send both account numbers. A 1-month rental stops working when the month ends. You enter the licence key from your order in the program's inputs, and the program will not start on a different account or with a wrong key. Source code is never supplied. The licence is for a single user and does not allow copying, redistribution, decompiling or resale. On the MQL5 Market, once listed, MetaQuotes handles licensing and activations instead, and no licence key is used."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do payment and delivery work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Send the exact amount in USDT on the TRON (TRC-20) network to the address shown on the product. Email the transaction ID (TXID), your MT5 account number and the product name to cryptopayment87@gmail.com. You receive a compiled .ex5 licensed to your account, together with the user guide and preset files, once the payment is confirmed on the TRON blockchain. Test it in the Strategy Tester and on a demo account before using it on a live or evaluation account. Send only USDT on TRON (TRC-20). Any other coin or network results in permanent loss of funds that cannot be recovered or refunded."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I get a refund?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The current policy, as stated in the risk disclaimer on every page: digital products are delivered immediately and are non-refundable except where the law requires otherwise. Blockchain payments cannot be reversed, so please use the free Titan PairFlow demo trial and read the product pages before you buy. If something does not work, email support with your TXID and account number."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there a free trial?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, for Titan PairFlow. The trial runs on demo accounts only, with 1 pair and 0.01 lot per leg, for 30 days from its build date. It needs no payment and no account number. Download it from the home page or the Titan PairFlow Pro page."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are any results or profits promised?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. No performance figures are published for these products, and they do not guarantee any profit, any particular result, or passing a prop-firm evaluation. Any backtest you run yourself is hypothetical."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are the risks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Trading foreign exchange, metals and CFDs on margin carries a high level of risk and may not be suitable for all investors. You can lose some or all of your capital. Loss locks react to price ticks, so gaps, slippage and weekend opens can still push past a limit. Titan PairFlow Pro sends no broker-side stop loss, so the terminal must keep running. These products are software tools only and do not provide investment advice. Use only funds you can afford to lose."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will the products be on the MQL5 Market?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, the products will also be listed on the MQL5 Market for buyers who prefer MetaTrader's built-in store. The developer profile is mql5.com/en/users/cryptopayment."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://peeir36.github.io/aurum-titan-ea/faq/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://peeir36.github.io/aurum-titan-ea/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "FAQ",
+     "item": "https://peeir36.github.io/aurum-titan-ea/faq/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+ <a class="brand" href="../">Aurum <span>Titan</span></a>
+ <nav aria-label="Main"><ul class="nav"><li><a href="../">Home</a></li><li><a href="../aurumtitanprop/">Aurum Titan Prop</a></li><li><a href="../titan-pairflow-pro/">Titan PairFlow Pro</a></li><li><a href="../aurum-titan-direction/">Aurum Titan Direction</a></li><li><a href="../faq/" aria-current="page">FAQ</a></li></ul></nav>
+ <form class="search" role="search" action="../#products" method="get">
+  <label for="q">Search products</label>
+  <input type="search" id="q" name="q" placeholder="gold, FTMO, pair trading, trial..." autocomplete="off" aria-describedby="search-hint">
+  <button type="submit">Search</button>
+  <span id="search-hint" class="skip">Filters the product list by keyword, for example gold, XAUUSD, prop firm, FTMO, pair trading, z-score, grid, indicator, direction or trial.</span>
+ </form>
+</div>
+<main id="main">
+<header>
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a> &rsaquo; <span aria-current="page">FAQ</span></nav>
+ <h1>Frequently asked questions</h1>
+ <p class="lead">Straight answers about requirements, prop firms, licensing, payment, delivery, refunds and risk for <a href="../aurumtitanprop/">Aurum Titan Prop</a>, <a href="../titan-pairflow-pro/">Titan PairFlow Pro</a> and <a href="../aurum-titan-direction/">Aurum Titan Direction</a>.</p>
+</header>
+
+<section class="faq">
+ <h2>Questions and answers</h2>
+ <details id="q1" open>
+  <summary><h3>Which MetaTrader version do the products need?</h3></summary>
+  <p>The MetaTrader 5 desktop terminal for Windows. The files are compiled <code>.ex5</code> programs for MT5; they do not run on MetaTrader 4, and the MT5 mobile apps (iOS and Android) cannot run Expert Advisors or custom indicators. Keep your terminal updated to a current build (Titan PairFlow Pro needs build 4000 or later).</p>
+ </details>
+ <details id="q2">
+  <summary><h3>Which brokers and prop firms can I use?</h3></summary>
+  <p>Any broker or prop firm that gives you a MetaTrader 5 account and allows Expert Advisors. Symbol suffixes such as <code>XAUUSD.r</code> are handled. Aurum Titan Prop includes rule presets for FTMO, FundedNext, The5ers, FundingPips, AquaFunded, Alpha Capital, E8 Markets, Blue Guardian, FXIFY and Maven, plus generic and custom settings. These presets are based on publicly available rules that may change, and the products are not affiliated with or endorsed by any firm.</p><p>Before you start, check your firm's current terms yourself: whether third-party or purchased EAs are allowed, news-trading windows, hedging, grid or martingale bans, minimum hold times, weekend holding, consistency rules and the exact loss formulas. Some firms also restrict strategies that many traders run identically.</p>
+ </details>
+ <details id="q3">
+  <summary><h3>How does licensing and the account lock work?</h3></summary>
+  <p>Direct USDT purchases get a compiled <code>.ex5</code> licensed to your MT5 account number. The lifetime licences for Aurum Titan Prop and Titan PairFlow Pro cover 2 accounts; send both account numbers. A 1-month rental stops working when the month ends. You enter the licence key from your order in the program's inputs, and the program will not start on a different account or with a wrong key. Source code is never supplied. The licence is for a single user and does not allow copying, redistribution, decompiling or resale.</p><p>On the MQL5 Market, once listed, MetaQuotes handles licensing and activations instead, and no licence key is used.</p>
+ </details>
+ <details id="q4">
+  <summary><h3>How do payment and delivery work?</h3></summary>
+  <ol><li>Send the exact amount in USDT on the TRON (TRC-20) network to the address shown on the product.</li><li>Email the transaction ID (TXID), your MT5 account number and the product name to <a href="mailto:cryptopayment87@gmail.com">cryptopayment87@gmail.com</a>.</li><li>You receive a compiled .ex5 licensed to your account, together with the user guide and preset files, once the payment is confirmed on the TRON blockchain.</li><li>Test it in the Strategy Tester and on a demo account before using it on a live or evaluation account.</li></ol><p>Send only USDT on TRON (TRC-20). Any other coin or network results in permanent loss of funds that cannot be recovered or refunded.</p>
+ </details>
+ <details id="q5">
+  <summary><h3>Can I get a refund?</h3></summary>
+  <p>The current policy, as stated in the risk disclaimer on every page: digital products are delivered immediately and are non-refundable except where the law requires otherwise. Blockchain payments cannot be reversed, so please use the free Titan PairFlow demo trial and read the product pages before you buy. If something does not work, email support with your TXID and account number.</p>
+ </details>
+ <details id="q6">
+  <summary><h3>Is there a free trial?</h3></summary>
+  <p>Yes, for Titan PairFlow. The trial runs on demo accounts only, with 1 pair and 0.01 lot per leg, for 30 days from its build date. It needs no payment and no account number. <a href="../#free-trial">Download it from the home page</a> or the <a href="../titan-pairflow-pro/#free-trial">Titan PairFlow Pro page</a>.</p>
+ </details>
+ <details id="q7">
+  <summary><h3>Are any results or profits promised?</h3></summary>
+  <p>No. No performance figures are published for these products, and they do not guarantee any profit, any particular result, or passing a prop-firm evaluation. Any backtest you run yourself is hypothetical.</p>
+ </details>
+ <details id="q8">
+  <summary><h3>What are the risks?</h3></summary>
+  <p>Trading foreign exchange, metals and CFDs on margin carries a high level of risk and may not be suitable for all investors. You can lose some or all of your capital. Loss locks react to price ticks, so gaps, slippage and weekend opens can still push past a limit. Titan PairFlow Pro sends no broker-side stop loss, so the terminal must keep running. These products are software tools only and do not provide investment advice. Use only funds you can afford to lose.</p>
+ </details>
+ <details id="q9">
+  <summary><h3>Will the products be on the MQL5 Market?</h3></summary>
+  <p>Yes, the products will also be listed on the MQL5 Market for buyers who prefer MetaTrader's built-in store. The developer profile is <a href="https://www.mql5.com/en/users/cryptopayment" rel="noopener">mql5.com/en/users/cryptopayment</a>.</p>
+ </details>
+</section>
+
+<section>
+ <h2>More from Aurum Titan</h2>
+ <ul class="related"><li><a href="../">All products<small>Home and product search</small></a></li><li><a href="../aurumtitanprop/">Aurum Titan Prop<small>Prop-firm XAUUSD Expert Advisor</small></a></li><li><a href="../titan-pairflow-pro/">Titan PairFlow Pro<small>Z-score pair trading EA, free demo trial</small></a></li><li><a href="../aurum-titan-direction/">Aurum Titan Direction<small>Gold direction indicator</small></a></li></ul>
+</section>
+
+<section>
+ <div class="risk">
+  <strong>Risk disclaimer.</strong> Trading foreign exchange, metals and CFDs on margin carries a high level of risk and may not be suitable for all investors. You can lose some or all of your capital. These products are software tools only. They do not provide investment advice and do not guarantee any profit, any particular result, or passing a prop-firm evaluation. No performance figures are published for these products. Any backtest or simulated result you run yourself is hypothetical and not indicative of future results. Prop-firm presets are based on publicly available rules that may change; verify your own account's rules. Use only funds you can afford to lose. Digital products are delivered immediately and are non-refundable except where the law requires otherwise.
+ </div>
+</section>
+</main>
+<footer>
+ &copy; 2026 Kirk Manahan (Cryptopayment). All rights reserved. The software is licensed, not sold, for single-user use; copying, redistribution, decompilation or resale is prohibited. MetaTrader is a trademark of MetaQuotes Ltd; this site is not affiliated with MetaQuotes. Contact: <a href="mailto:cryptopayment87@gmail.com" style="color:var(--gold)">cryptopayment87@gmail.com</a>
+</footer>
+<script>
+document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+ var a=b.getAttribute('data-addr');
+ var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)};
+ if(navigator.clipboard){navigator.clipboard.writeText(a).then(done,function(){prompt('Copy this address:',a)})}else{prompt('Copy this address:',a)}
+})});
+</script>
+<script>
+(function(){
+ var form=document.querySelector('form.search'),input=document.getElementById('q');
+ var cards=[].slice.call(document.querySelectorAll('[data-keywords]'));
+ var status=document.getElementById('search-status'),none=document.getElementById('no-match');
+ if(!form||!input||!cards.length)return;          /* not the home page: the form submits to the home page */
+ form.setAttribute('action','#products');
+ function norm(s){return (s||'').toLowerCase().replace(/[^a-z0-9+\-%. ]+/g,' ');}
+ var hay=cards.map(function(c){return norm(c.getAttribute('data-keywords')+' '+c.textContent);});
+ function run(){
+  var terms=norm(input.value).split(/\s+/).filter(Boolean),shown=0;
+  cards.forEach(function(c,i){
+   var ok=terms.every(function(t){return hay[i].indexOf(t)>-1;});
+   c.hidden=!ok;if(ok)shown++;
+  });
+  none.hidden=shown>0;
+  status.textContent=terms.length?(shown?shown+' of '+cards.length+' products match "'+input.value.trim()+'"':'No products match "'+input.value.trim()+'"'):'';
+  var u=new URL(location.href);
+  if(terms.length)u.searchParams.set('q',input.value.trim());else u.searchParams.delete('q');
+  history.replaceState(null,'',u.pathname+u.search+u.hash);
+ }
+ input.addEventListener('input',run);
+ input.addEventListener('keydown',function(e){if(e.key==='Escape'){input.value='';run();}});
+ form.addEventListener('submit',function(e){e.preventDefault();run();document.getElementById('products').scrollIntoView();});
+ var q=new URLSearchParams(location.search).get('q');
+ if(q){input.value=q;run();}
+})();
+</script>
+</body>
+</html>

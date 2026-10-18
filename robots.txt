@@ -1,0 +1,6 @@
+# Note: crawlers only read robots.txt at the host root (https://peeir36.github.io/robots.txt).
+# This copy documents intent and points to the sitemap; submit the sitemap in Google Search Console and Bing Webmaster Tools.
+User-agent: *
+Allow: /
+
+Sitemap: https://peeir36.github.io/aurum-titan-ea/sitemap.xml

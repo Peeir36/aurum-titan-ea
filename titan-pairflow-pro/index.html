@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Titan PairFlow Pro: Z-Score Pair Trading EA for MT5</title>
+<meta name="description" content="Statistical pair trading EA for MT5: OLS hedge ratio, z-score spread entries, beta-neutral sizing, up to 20 pairs, Auto Pilot or Manual. Free demo trial.">
+<link rel="canonical" href="https://peeir36.github.io/aurum-titan-ea/titan-pairflow-pro/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Kirk Manahan (Cryptopayment)">
+<!-- SEARCH ENGINE VERIFICATION: paste the tags you get from the consoles here (home page is enough). -->
+<!-- Google Search Console: <meta name="google-site-verification" content="PASTE_GOOGLE_TOKEN_HERE"> -->
+<!-- Bing Webmaster Tools:  <meta name="msvalidate.01" content="PASTE_BING_TOKEN_HERE"> -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aurum Titan">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Titan PairFlow Pro: Z-Score Pair Trading EA for MT5">
+<meta property="og:description" content="Statistical pair trading EA for MT5: OLS hedge ratio, z-score spread entries, beta-neutral sizing, up to 20 pairs, Auto Pilot or Manual. Free demo trial.">
+<meta property="og:url" content="https://peeir36.github.io/aurum-titan-ea/titan-pairflow-pro/">
+<meta property="og:image" content="https://peeir36.github.io/aurum-titan-ea/assets/img/titanpairflow-pro-promo.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:alt" content="Titan PairFlow MT5 promo graphic: z-score pair trading with up to 20 pairs, Auto Pilot or Manual dashboard, daily and total loss guard, free demo trial available">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Titan PairFlow Pro: Z-Score Pair Trading EA for MT5">
+<meta name="twitter:description" content="Statistical pair trading EA for MT5: OLS hedge ratio, z-score spread entries, beta-neutral sizing, up to 20 pairs, Auto Pilot or Manual. Free demo trial.">
+<meta name="twitter:image" content="https://peeir36.github.io/aurum-titan-ea/assets/img/titanpairflow-pro-promo.png">
+<meta name="twitter:image:alt" content="Titan PairFlow MT5 promo graphic: z-score pair trading with up to 20 pairs, Auto Pilot or Manual dashboard, daily and total loss guard, free demo trial available">
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://peeir36.github.io/aurum-titan-ea/#kirk-manahan",
+   "name": "Kirk Manahan",
+   "alternateName": "Cryptopayment",
+   "jobTitle": "MetaTrader 5 software developer",
+   "email": "mailto:cryptopayment87@gmail.com",
+   "url": "https://peeir36.github.io/aurum-titan-ea/",
+   "sameAs": [
+    "https://www.mql5.com/en/users/cryptopayment",
+    "https://t.me/titanealabs"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://peeir36.github.io/aurum-titan-ea/#website",
+   "url": "https://peeir36.github.io/aurum-titan-ea/",
+   "name": "Aurum Titan",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://peeir36.github.io/aurum-titan-ea/#kirk-manahan"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://peeir36.github.io/aurum-titan-ea/titan-pairflow-pro/#software",
+   "name": "Titan PairFlow Pro",
+   "description": "MetaTrader 5 Expert Advisor for statistical pair trading: OLS hedge ratio and correlation per pair, entries on the z-score of the spread, beta-neutral risk-based sizing, up to 20 pairs, Auto Pilot or Manual mode, daily and total loss guard.",
+   "url": "https://peeir36.github.io/aurum-titan-ea/titan-pairflow-pro/",
+   "operatingSystem": "Windows (MetaTrader 5)",
+   "applicationCategory": "FinanceApplication",
+   "applicationSubCategory": "Expert Advisor",
+   "softwareRequirements": "MetaTrader 5 desktop terminal",
+   "author": {
+    "@id": "https://peeir36.github.io/aurum-titan-ea/#kirk-manahan"
+   },
+   "publisher": {
+    "@id": "https://peeir36.github.io/aurum-titan-ea/#kirk-manahan"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Titan PairFlow Pro, lifetime",
+     "price": "115",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://peeir36.github.io/aurum-titan-ea/titan-pairflow-pro/#buy",
+     "seller": {
+      "@id": "https://peeir36.github.io/aurum-titan-ea/#kirk-manahan"
+     },
+     "category": "Software licence, paid in USDT (TRC-20)"
+    },
+    {
+     "@type": "Offer",
+     "name": "Titan PairFlow Pro, 1-month rental",
+     "price": "30",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://peeir36.github.io/aurum-titan-ea/titan-pairflow-pro/#buy",
+     "seller": {
+      "@id": "https://peeir36.github.io/aurum-titan-ea/#kirk-manahan"
+     },
+     "category": "Software licence, paid in USDT (TRC-20)"
+    }
+   ],
+   "image": "https://peeir36.github.io/aurum-titan-ea/assets/img/titanpairflow-pro-promo.png"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://peeir36.github.io/aurum-titan-ea/titan-pairflow-pro/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://peeir36.github.io/aurum-titan-ea/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Titan PairFlow Pro",
+     "item": "https://peeir36.github.io/aurum-titan-ea/titan-pairflow-pro/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+ <a class="brand" href="../">Aurum <span>Titan</span></a>
+ <nav aria-label="Main"><ul class="nav"><li><a href="../">Home</a></li><li><a href="../aurumtitanprop/">Aurum Titan Prop</a></li><li><a href="../titan-pairflow-pro/" aria-current="page">Titan PairFlow Pro</a></li><li><a href="../aurum-titan-direction/">Aurum Titan Direction</a></li><li><a href="../faq/">FAQ</a></li></ul></nav>
+ <form class="search" role="search" action="../#products" method="get">
+  <label for="q">Search products</label>
+  <input type="search" id="q" name="q" placeholder="gold, FTMO, pair trading, trial..." autocomplete="off" aria-describedby="search-hint">
+  <button type="submit">Search</button>
+  <span id="search-hint" class="skip">Filters the product list by keyword, for example gold, XAUUSD, prop firm, FTMO, pair trading, z-score, grid, indicator, direction or trial.</span>
+ </form>
+</div>
+<main id="main">
+<header>
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a> &rsaquo; <span aria-current="page">Titan PairFlow Pro</span></nav>
+ <h1>Titan PairFlow Pro: z-score pair trading EA for MT5</h1>
+ <p class="lead">Multi-asset statistical arbitrage for MetaTrader 5: the EA computes a hedge ratio and a z-score spread index for each pair, then opens and manages both legs in Auto Pilot or Manual mode. Free demo trial available.</p>
+ <img class="promo" src="../assets/img/titanpairflow-pro-promo.png" width="1080" height="1080" alt="Titan PairFlow MT5 promo graphic: z-score pair trading with up to 20 pairs, Auto Pilot or Manual dashboard, daily and total loss guard, free demo trial available" loading="lazy">
+</header>
+
+<section class="content">
+ <h2>What Titan PairFlow Pro does</h2>
+ <p>Titan PairFlow Pro is an Expert Advisor for statistical pair trading on MetaTrader 5. Instead of guessing market direction, it measures how two related instruments move together and trades the spread between them. It works with forex, metals, indices, crypto, stocks and CFDs. No performance figures are published. You can try the engine first with the <a href="#free-trial">free demo trial</a>.</p>
+
+ <h3>Hedge ratio, correlation and z-score</h3>
+ <ul>
+  <li>For each pair A/B, the EA regresses ln(A) on ln(B) over a lookback of closed bars (OLS). That gives the hedge ratio (beta) and the correlation.</li>
+  <li>The spread is ln(A) minus beta times ln(B). The z-score shows how far the spread is from its mean, in standard deviations.</li>
+  <li><strong>Entries:</strong> long the spread (buy A, hedge with B) when z falls to minus the entry threshold; short the spread when z rises to plus the threshold. Signals use closed-bar values and are checked once per new bar.</li>
+  <li><strong>Exits:</strong> when the spread reverts (|z| at or below the exit level), on a z stop, on a time stop, on basket money take-profit or stop-loss, or when the loss guard triggers.</li>
+ </ul>
+
+ <h3>Beta-neutral, risk-based sizing</h3>
+ <p>Leg A is sized from your risk money and the distance between the entry and stop z-levels. Leg B is sized from the hedge ratio. Lots use each symbol's own tick size, tick value and lot step, so pairs from different asset classes can be combined. If leg B fails to open, leg A is closed immediately, so no leg is left unhedged.</p>
+
+ <h3>Up to 20 pairs, Auto Pilot or Manual</h3>
+ <ul>
+  <li>Auto Pilot (default) opens and manages both legs automatically; Manual mode lets you open and close from the dashboard.</li>
+  <li>Each pair row shows correlation, beta, live z, status and P/L, with buttons L (long spread), S (short spread), X (close) and Z (show the spread index).</li>
+  <li>Quick symbol search: type, press FIND, click matches to fill A and B, then ADD PAIR. Broker suffixes and prefixes (for example <code>XAUUSD.x</code> or <code>GOLD</code>) are resolved automatically.</li>
+  <li>Each pair has its own magic number. On netting accounts, a pair is skipped if one of its symbols already has a position.</li>
+ </ul>
+
+ <h3>Filters and loss guard</h3>
+ <p>Filters: minimum correlation, maximum beta, maximum spread per leg, session hours, high-impact news (MT5 calendar, live only), maximum open pairs and maximum margin as a share of free margin. A daily and total loss guard with saved locks suits prop-firm style accounts.</p>
+ <p><strong>Important:</strong> orders carry no broker-side stop loss. The EA manages all exits itself, so keep MetaTrader 5 running (a VPS helps). Pair trading does not remove market risk: correlations break down and spreads can trend instead of reverting.</p>
+
+ <h3>Requirements and setup</h3>
+ <ol>
+  <li>MetaTrader 5 desktop terminal (build 4000 or later) on Windows.</li>
+  <li>Two symbols with overlapping trading hours and enough history (by default 200 bars of M15).</li>
+  <li>Copy the delivered EA <code>.ex5</code> to <code>MQL5\Experts</code> and the spread-index indicator <code>TitanPairFlowZ.ex5</code> to <code>MQL5\Indicators</code>, then refresh the Navigator and attach the EA to a chart.</li>
+  <li>Run it in the Strategy Tester and on a demo account first. Results depend on your broker's prices, costs and execution.</li>
+ </ol>
+ <p>See the <a href="../faq/">FAQ</a> for licensing, delivery and refunds.</p>
+</section>
+
+<section id="buy">
+ <h2>Buy Titan PairFlow Pro with USDT (TRC-20)</h2>
+ <div class="warnbox">
+  <strong>Important for direct USDT payments:</strong> send <strong>only USDT on the TRON (TRC-20) network</strong> to the address shown. Sending any other coin, or USDT on any other network (ERC-20, BEP-20 and so on), will result in permanent loss of funds that cannot be recovered or refunded. Send the exact amount shown for the product.
+  <br><br>After paying, email <a href="mailto:cryptopayment87@gmail.com" style="color:var(--gold)">cryptopayment87@gmail.com</a> with: (1) the transaction ID (TXID), (2) your MT5 account number, and (3) the product name. Your account-locked file is sent once the payment is confirmed on the TRON blockchain.
+ </div>
+ <div class="grid">
+  <div class="card">
+   <span class="tag">Expert Advisor, multi-asset</span><h3>Titan PairFlow Pro</h3>
+   <ul>
+    <li>Pair trading on the z-score of a hedge-ratio spread</li>
+    <li>Up to 20 pairs: forex, metals, indices, crypto, CFDs</li>
+    <li>Auto Pilot or Manual mode from the dashboard</li>
+    <li>Beta-neutral, risk-based sizing for both legs</li>
+    <li>Daily and total loss guard; no broker-side SL, EA-managed exits</li>
+   </ul>
+   <div class="price">115 USDT <small>lifetime, 2 accounts</small></div>
+   <div class="usdt">
+    <div class="usdt-h">Pay directly with USDT (TRC-20)</div>
+    <div>Send exactly <strong>115 USDT</strong> for <em>Titan PairFlow Pro, lifetime</em></div>
+    <div class="addr"><code>TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ</code><button type="button" class="copy" data-addr="TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ">Copy</button></div>
+    <div class="usdt-warn">Send only USDT on the TRON (TRC-20) network. Other coins or networks will be lost.</div>
+   </div>
+   <div class="usdt">
+    <div class="usdt-h">Pay directly with USDT (TRC-20)</div>
+    <div>Send exactly <strong>30 USDT</strong> for <em>Titan PairFlow Pro, 1-month rental</em></div>
+    <div class="addr"><code>TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ</code><button type="button" class="copy" data-addr="TMJcW3eLcHMkGT4VNqrU87G1zPbVUfScNZ">Copy</button></div>
+    <div class="usdt-warn">Send only USDT on the TRON (TRC-20) network. Other coins or networks will be lost.</div>
+   </div>
+   <a class="btn alt" href="#free-trial">Try the free demo trial first</a>
+  </div>
+ </div>
+</section>
+
+<section id="free-trial">
+ <h2>Free trial: Titan PairFlow</h2>
+ <p class="lead">Try the pair-trading engine before you buy. The trial runs on <strong>demo accounts only</strong> with 1 pair and 0.01 lot per leg, for 30 days from its build date. It needs no payment and no account number.</p>
+ <a class="btn" style="max-width:340px" href="../downloads/TitanPairFlow_Free_v1.00.zip" download>Download free trial (.zip)</a>
+ <p class="lead" style="font-size:.9rem">Install: copy <code>TitanPairFlow_Free.ex5</code> to <code>MQL5\Experts</code> and <code>TitanPairFlowZ.ex5</code> to <code>MQL5\Indicators</code>. Full steps are in the README inside the zip. No results are claimed. Test the EA on demo before using the Pro version on a live account.</p>
+</section>
+<section>
+ <h2>How purchase and delivery work</h2>
+ <ol>
+  <li>Send the exact amount in USDT on the TRON (TRC-20) network to the address shown on the product.</li>
+  <li>Email the transaction ID (TXID), your MT5 account number and the product name to the support email.</li>
+  <li>You receive a compiled .ex5 licensed to your account, together with the user guide and preset files.</li>
+  <li>Test it in the Strategy Tester and on a demo account before using it on a live or evaluation account.</li>
+ </ol>
+ <p class="lead">Prefer MetaTrader's built-in store? The products will also be listed on the MQL5 Market.</p>
+</section>
+
+<section>
+ <h2>More from Aurum Titan</h2>
+ <ul class="related"><li><a href="../">All products<small>Home and product search</small></a></li><li><a href="../aurumtitanprop/">Aurum Titan Prop<small>Prop-firm XAUUSD Expert Advisor</small></a></li><li><a href="../aurum-titan-direction/">Aurum Titan Direction<small>Gold direction indicator</small></a></li><li><a href="../faq/">FAQ<small>MT5 version, licensing, delivery, refunds</small></a></li></ul>
+</section>
+
+<section>
+ <div class="risk">
+  <strong>Risk disclaimer.</strong> Trading foreign exchange, metals and CFDs on margin carries a high level of risk and may not be suitable for all investors. You can lose some or all of your capital. These products are software tools only. They do not provide investment advice and do not guarantee any profit, any particular result, or passing a prop-firm evaluation. No performance figures are published for these products. Any backtest or simulated result you run yourself is hypothetical and not indicative of future results. Prop-firm presets are based on publicly available rules that may change; verify your own account's rules. Use only funds you can afford to lose. Digital products are delivered immediately and are non-refundable except where the law requires otherwise.
+ </div>
+</section>
+</main>
+<footer>
+ &copy; 2026 Kirk Manahan (Cryptopayment). All rights reserved. The software is licensed, not sold, for single-user use; copying, redistribution, decompilation or resale is prohibited. MetaTrader is a trademark of MetaQuotes Ltd; this site is not affiliated with MetaQuotes. Contact: <a href="mailto:cryptopayment87@gmail.com" style="color:var(--gold)">cryptopayment87@gmail.com</a>
+</footer>
+<script>
+document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+ var a=b.getAttribute('data-addr');
+ var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)};
+ if(navigator.clipboard){navigator.clipboard.writeText(a).then(done,function(){prompt('Copy this address:',a)})}else{prompt('Copy this address:',a)}
+})});
+</script>
+<script>
+(function(){
+ var form=document.querySelector('form.search'),input=document.getElementById('q');
+ var cards=[].slice.call(document.querySelectorAll('[data-keywords]'));
+ var status=document.getElementById('search-status'),none=document.getElementById('no-match');
+ if(!form||!input||!cards.length)return;          /* not the home page: the form submits to the home page */
+ form.setAttribute('action','#products');
+ function norm(s){return (s||'').toLowerCase().replace(/[^a-z0-9+\-%. ]+/g,' ');}
+ var hay=cards.map(function(c){return norm(c.getAttribute('data-keywords')+' '+c.textContent);});
+ function run(){
+  var terms=norm(input.value).split(/\s+/).filter(Boolean),shown=0;
+  cards.forEach(function(c,i){
+   var ok=terms.every(function(t){return hay[i].indexOf(t)>-1;});
+   c.hidden=!ok;if(ok)shown++;
+  });
+  none.hidden=shown>0;
+  status.textContent=terms.length?(shown?shown+' of '+cards.length+' products match "'+input.value.trim()+'"':'No products match "'+input.value.trim()+'"'):'';
+  var u=new URL(location.href);
+  if(terms.length)u.searchParams.set('q',input.value.trim());else u.searchParams.delete('q');
+  history.replaceState(null,'',u.pathname+u.search+u.hash);
+ }
+ input.addEventListener('input',run);
+ input.addEventListener('keydown',function(e){if(e.key==='Escape'){input.value='';run();}});
+ form.addEventListener('submit',function(e){e.preventDefault();run();document.getElementById('products').scrollIntoView();});
+ var q=new URLSearchParams(location.search).get('q');
+ if(q){input.value=q;run();}
+})();
+</script>
+</body>
+</html>
